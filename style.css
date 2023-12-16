@@ -1,0 +1,214 @@
+nav {
+    margin: 0 auto 0;
+    position: relative;
+    width: 590px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 0;
+    float: right;
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+
+a:nth-child(1) {
+    width: 100px;
+}
+
+a:nth-child(2) {
+    width: 110px;
+}
+
+a:nth-child(3) {
+    width: 100px;
+}
+
+a:nth-child(4) {
+    width: 160px;
+}
+
+a:nth-child(5) {
+    width: 120px;
+}
+
+nav .start-home,
+a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: red;
+}
+
+nav .start-about,
+a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+    background-color: #1abc9c;
+}
+
+nav .start-blog,
+a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+    background-color: #3498db;
+}
+
+nav .start-portefolio,
+a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+    background-color: #9b59b6;
+}
+
+nav .start-contact,
+a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+    background-color: #e67e22;
+}
+
+body {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: #000000;
+}
+
+h1 {
+    text-align: left;
+    text-align: left;
+    font-size: 75px;
+    padding-left: 75px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ecf0f1;
+    font-family: 'Cherry Swash', cursive;
+    font-size: 16px;
+}
+
+span {
+    color: #2BD6B4;
+}
+
+b.dis {
+    /* position: absolute; */
+    bottom: 20px;
+    padding-left: 75px;
+    width: 100%;
+    text-align: left;
+    color: #ecf0f1;
+    font-family: 'Cherry Swash', cursive;
+    font-size: 16px;
+}
+
+.button3 {
+    background-color: rgb(227, 10, 10);
+    color: rgb(253, 252, 252);
+    border: 2px solid #ffffff;
+}
+
+.button3:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.button {
+    background-color: #ff0040;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 16px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 75px;
+    margin-top: 50px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.whats-app {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 15px;
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+.foot-element {
+    padding-left: 35px;
+    transition: transform .2s;
+    float: left;
+    width: 300px;
+    height: 150px;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    justify-content: space-evenly;
+    align-content: stretch;
+    justify-items: center;
+}
+
+.foot-element:hover {
+    transform: scale(1.2);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.foot-element .img-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding-left: 10px;
+}
+
+.foot-element .text {
+    padding-right: 39px;
+    font-size: 70px;
+}
+
+b.foot-text {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+p.f-text {
+    position: relative;
+    text-align: left;
+}
